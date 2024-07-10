@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>IAMSHOP-로그인</title>
+    <link rel="stylesheet"
+          type="text/css"
+          th:href="@{/assets/styles/index.css}">
+    <link rel="stylesheet"
+          type="text/css"
+          th:href="@{/assets/styles/common.css}">
+</head>
+<body>
+<th:block th:replace="~{fragments/userIndex/headerSection.html :: headerSection}"></th:block>
+
+
+<div class="login-controller" th:with="userRegex=${T(com.example.IAMSHOP.regexes.MemberRegex)}">
+    <div class="contents">
+        <form id="loginForm">
+            <div class="login">
+                <h3>우아한 입장, 높은 품격의 쇼핑을 즐기세요.</h3>
+                <div class="inputBox">
+                    <label>
+                        <input required autofocus class="id" type="text" maxlength="20" minlength="2" placeholder="아이디">
+                    </label>
+                    <label>
+                        <input required autofocus class="password" type="password" maxlength="20" minlength="2"
+                               placeholder="비밀번호">
+                    </label>
+                </div>
+                <label>
+                    <input class="checkbox" type="checkbox">
+                    <span>아이디 저장</span>
+                </label>
+                <div class="flex">
+                    <a class="login" href="#">로그인</a>
+                    <a class="login kakao" href="#">
+                        <img class="kakaoLogo" src="/assets/images/icon/kakaoLogo.png" alt="">카카오로그인
+                    </a>
+                </div>
+                <div class="bottom-menu">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+
+                <p>매월, 당신을 위한 특별한 할인이 기다립니다.</p>
+                <div class="flex">
+                    <a href="#">회원혜택안내</a>
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

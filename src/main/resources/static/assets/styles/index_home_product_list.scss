@@ -1,0 +1,129 @@
+body {
+  overflow-x: unset !important;
+  min-width: unset !important;
+  overflow-y: unset !important;
+  white-space: nowrap;
+  cursor: default;
+  font-family: "Roboto", "Pretendard", serif;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+  box-sizing: border-box;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html body .ec-base-product ul.grid3 li {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.list-wrap .list-list {
+  width: 100%;
+}
+
+
+.container {
+  box-sizing: border-box;
+
+  > .contents {
+
+    > .list-wrap {
+      display: flex;
+
+
+      > .filter {
+        min-width: 285px;
+        max-width: 285px;
+        margin-right: 169px;
+
+        > .wrap {
+          position: sticky;
+          left: 0;
+          top: 125px;
+          min-width: 300px;
+          max-width: 300px;
+          padding-right: 20px;
+          max-height: calc(100vh - 140px);
+          min-height: calc(100vh - 140px);
+          overflow-y: auto;
+
+          > .custom-nav {
+
+            > .productMenu {
+
+              > .menuCategory {
+
+                > .productDisplayCategory {
+
+                  > a {
+                    width: 20rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > .list-list {
+
+        > .prdList {
+          width: 5rem;
+
+          > li {
+            position: relative;
+            display: inline-block;
+            margin: 0 0 30px;
+            color: #a1a1a1;
+            vertical-align: top;
+          }
+        }
+
+        > .grid3 {
+          width: calc(100% + 16px) !important;
+          margin-left: -8px;
+          transform: unset;
+
+          > li {
+            padding: 0 !important;
+            width: calc(100% / 4 - 16px);
+            margin-left: 8px;
+            margin-right: 8px;
+
+            > .thumbnail {
+              width: 100% !important;
+              border: none;
+              position: relative;
+
+              margin: 0 auto;
+              text-align: center;
+              float: none;
+
+              > .noborder{
+
+                > .thumb-img {
+                  width: 100%;
+                  opacity: 1 !important;
+                  border: none;
+
+                  > &.thumb-img:hover {
+                    display: none;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<header id="header" th:fragment="headerSection">
+    <div class="header_sec01">
+        <div class="top">
+            <!--    언어 -->
+            <div class="f-Left">
+            </div>
+            <!--        메인로고 -->
+            <div class="f-center">
+                <div>
+                    <h1 class="header-title">IAMSHOP</h1>
+                </div>
+            </div>
+
+            <div class="f-right">
+                <!--        검색아이콘/-->
+                <div class="search">
+                    <img th:src="@{/assets/images/icon/search.png}" alt="">
+                </div>
+                <!--        장바구니-->
+                <div class="basket">
+                    <img th:src="@{/assets/images/icon/shoppingBag.png}" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="spring"></div>
+
+        <div class="topMenu_area">
+            <div class="flex">
+                <!--                신상품-->
+                <div class="category-menu">
+                    <a href="#">신상품</a>
+                </div>
+                <!--        스토어 /-->
+                <div class="category-menu">
+                    <a class="store" href="">스토어</a>
+                    <div class="wrap">
+                        <div class="rel">
+                            <!--                    신상품-->
+                            <div class="link">
+                                <a href="">신상품</a>
+                                <div class="depth2">
+                                    <a href="#">전체</a>
+                                    <!--             아우터-->
+                                    <div class="link">
+                                        <a href="#">아우터</a>
+                                        <div class="depth3">
+                                            <a href="#">전체</a>
+                                            <a href="#">다운</a>
+                                            <a href="#">코트</a>
+                                            <a href="#">재킷</a>
+                                            <a href="#">카디건</a>
+                                            <a href="#">베스트</a>
+                                        </div>
+                                    </div>
+                                    <!--                            니트-->
+                                    <div class="link">
+                                        <a href="#">니트</a>
+                                        <div class="depth3">
+                                            <a href="#">전체</a>
+                                            <a href="#">카디건</a>
+                                            <a href="#">풀오버</a>
+                                            <a href="#">베스트</a>
+                                            <a href="#">하프</a>
+                                        </div>
+                                    </div>
+                                    <!--                            상의-->
+                                    <div class="link">
+                                        <a href="#">상의</a>
+                                        <div class="depth3">
+                                            <a href="#">전체</a>
+                                            <a href="#">긴팔 셔츠</a>
+                                            <a href="#">반팔 셔츠</a>
+                                            <a href="#">긴팔 티셔츠</a>
+                                            <a href="#">반팔 티셔츠</a>
+                                            <a href="#">드레스</a>
+                                        </div>
+                                    </div>
+                                    <!--                            하의-->
+                                    <div class="link">
+                                        <a href="#">하의</a>
+                                        <div class="depth3">
+                                            <a href="#">전체</a>
+                                            <a href="#">롱팬츠</a>
+                                            <a href="#">쇼츠</a>
+                                            <a href="#">데님</a>
+                                            <a href="#">스커트</a>
+                                        </div>
+                                    </div>
+                                    <!--                            신발-->
+                                    <div class="link">
+                                        <a href="#">신발</a>
+                                        <div class="depth3">
+                                            <a href="#">전체</a>
+                                            <a href="#">레더</a>
+                                            <a href="#">스니커즈</a>
+                                            <a href="#">샌들</a>
+                                        </div>
+                                    </div>
+                                    <!--                            악세사리-->
+                                    <div class="link">
+                                        <a href="#">악세사리</a>
+                                        <div class="depth3">
+                                            <a href="#">전체</a>
+                                            <a href="#">시계</a>
+                                            <a href="#">가방</a>
+                                            <a href="#">모자</a>
+                                            <a href="#">주얼리</a>
+                                            <a href="#">벨트</a>
+                                            <a href="#">넥타이</a>
+                                            <a href="#">스카프</a>
+                                            <a href="#">양말</a>
+                                            <a href="#">아이웨어</a>
+                                            <a href="#">장갑</a>
+                                            <a href="#">라이프</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                    브랜드-->
+                <div class="category-menu">
+                    <a href="#">브랜드</a>
+                </div>
+                <!--                    발매일정-->
+                <div class="category-menu">
+                    <a href="#">발매일정</a>
+                </div>
+                <!--                    저널-->
+                <div class="category-menu">
+                    <a href="#">저널</a>
+                    <div class="wrap">
+                        <div class="rel">
+                            <!--                    LAB-->
+                            <div class="link">
+                                <a href="">LAB</a>
+                                <div class="depth2">
+                                    <a href="#">전체</a>
+                                </div>
+                            </div>
+                            <!--                    뉴스-->
+                            <div class="link">
+                                <a href="">뉴스</a>
+                                <div class="depth2">
+                                    <a href="#">전체</a>
+                                    <a href="#">업데이트 안내</a>
+                                    <a href="#">이벤트 안내</a>
+                                </div>
+                            </div>
+                            <!--                    에디토리얼-->
+                            <div class="link">
+                                <a href="">에디토리얼</a>
+                                <div class="depth2">
+                                    <a href="#">전체</a>
+                                    <a href="#">2024</a>
+                                    <a href="#">2023</a>
+                                    <a href="#">2022</a>
+                                    <a href="#">2021</a>
+                                    <a href="#">2020</a>
+                                </div>
+                            </div>
+                            <!--                    룩북-->
+                            <div class="link">
+                                <a href="">룩북</a>
+                                <div class="depth2">
+                                    <a href="#">전체</a>
+                                    <a href="#">SS24</a>
+                                    <a href="#">AW23</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                    스타일링샘플-->
+                <div class="category-menu">
+                    <a href="#">스타일링샘플</a>
+                </div>
+                <hr>
+                <!--                    브랜드 세일-->
+                <div class="category-menu">
+                    <a href="#">ColeCole SALE: 30%</a>
+                </div>
+                <!--                    세일-->
+                <div class="category-menu">
+                    <a href="#">세일</a>
+                </div>
+                <!--                &lt;!&ndash;                    가정의 달 프로모션&ndash;&gt;-->
+                <!--                <div class="category-menu">-->
+                <!--                    <a href="#">가정의 달 프로모션</a>-->
+                <!--                </div>-->
+                <!--                &lt;!&ndash;                    colecole&ndash;&gt;-->
+                <!--                <div class="category-menu">-->
+                <!--                    <a href="#">ColeCole</a>-->
+                <!--                </div>-->
+                <ul>
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">마이 페이지</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+</html>

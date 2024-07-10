@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<div class="wrap" id="myPage" th:fragment="myPage">
+    <div class="container">
+        <div class="contents">
+            <section class="myPage">
+                <!--                왼쪽 목록-->
+                <div class="flex">
+                    <div class="left-nav">
+                        <p>마이페이지</p>
+                        <p>쇼핑정보</p>
+                        <div class="first">
+                            <a href="#">주문내역 조회</a>
+                            <a href="#">교환/반품/취소</a>
+                        </div>
+                        <p>회원 정보</p>
+                        <div class="second">
+                            <a href="#">회원 정보 수정</a>
+                            <a href="">배송 주소록 관리</a>
+                            <a href="">로그아웃</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                오른쪽 마이페이지 메인-->
+                <section class="content">
+                    <div class="information">
+                            <div class="icon">
+                                <img src="/assets/images/icon/membership-icon.png" alt="">
+                            </div>
+                        <div class="description">
+                            <div class="userDetail">
+                                <div class="name">
+                                    <p style="font-weight: 500; font-size: 1.4rem; margin: 0 0 0.5rem 0;">전우진</p>
+                                </div>
+                                <div class="membershipBtn">
+                                    <a href="#">등급 혜택 확인하기</a>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <span>
+                                    <a href="#">적립금</a>
+                                    <a href="#">10,000</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>나의 주문처리 현황</h3>
+                    <div class="state">
+                        <div class="state-wrap">
+                            <a href="#">
+                                <strong>입금전</strong>
+                                <span>0</span>
+                            </a>
+                            <a href="#">
+                                <strong>배송준비중</strong>
+                                <span>0</span>
+                            </a>
+                            <a href="#">
+                                <strong>배송중</strong>
+                                <span>0</span>
+                            </a>
+                            <a href="#">
+                                <strong>배송완료</strong>
+                                <span>0</span>
+                            </a>
+                            <a href="#">
+                                <strong>취소</strong>
+                                <span>0</span>
+                            </a>
+                            <a href="#">
+                                <strong>반품</strong>
+                                <span>0</span>
+                            </a>
+                            <a href="#">
+                                <strong>교환</strong>
+                                <span>0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-history">
+                        <h3>최근 주문내역</h3>
+                        <p class="message">주문 내역이 없습니다.</p>
+                    </div>
+
+                </section>
+            </section>
+        </div>
+    </div>
+</div>
+
+</html>

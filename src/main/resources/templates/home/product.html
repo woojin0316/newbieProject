@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IAMSHOP-프로덕트</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="/assets/styles/index.css">
+</head>
+<body>
+<th:block th:replace="~{fragments/userIndex/headerSection.html :: headerSection}"></th:block>
+<div class="container">
+    <div class="contents">
+        <div class="list-wrap">
+            <div class="filter">
+                <div class="wrap">
+                    <div class="custom-nav">
+                        <div class="productMenu">
+                            <ul class="menuCategory">
+                                <li class="productDisplayCategory">
+                                    <a href="#">신상품</a>
+                                    <ul class="product-children depth2">
+                                        <li class="selected xans-record">
+                                            <a href="#" class="active">전체</a>
+                                        </li>
+                                        <li class=" xans-record-">
+                                            <a href="" class="link-none">아우터</a>
+                                            <!-- <div class="button">
+                                                <img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_category_open.gif" alt="" class="icoOpen" />
+                                            </div> -->
+                                            <ul class="product-children depth3">
+                                                <li class=" xans-record-">
+                                                    <a href="#">전체</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="#">다운</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="#">코트</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="#">재킷</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="#">카디건</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="#">베스트</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" xans-record-">
+                                            <a href="#" class="link-none active">니트</a>
+                                            <ul class="product-children depth3">
+                                                <li class="xans-record-">
+                                                    <a href="/product/list.html?cate_no=2938">전체</a>
+                                                </li>
+                                                <li class="xans-record-">
+                                                    <a href="/product/list.html?cate_no=3023">카디건</a>
+                                                </li>
+                                                <li class="xans-record-">
+                                                    <a href="/product/list.html?cate_no=3024">풀오버 </a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3025">베스트 </a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3026">하프</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" xans-record-">
+                                            <a href="#" class="link-none">상의</a>
+                                            <!-- <div class="button">
+                                                <img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_category_open.gif" alt="" class="icoOpen" />
+                                            </div> -->
+                                            <ul class="xans-element- xans-product xans-product-children subCategory depth-3">
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=2939">전체</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3027">긴팔 셔츠
+                                                    </a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3028">반팔 셔츠
+                                                    </a>
+                                                </li>
+                                                <li class=" xans-record-"><a href="/product/list.html?cate_no=3029">긴팔
+                                                    티셔츠
+                                                </a>
+                                                </li>
+                                                <li class=" xans-record-"><a href="/product/list.html?cate_no=3030">반팔
+                                                    티셔츠
+                                                </a>
+                                                </li>
+                                                <li class=" xans-record-"><a href="/product/list.html?cate_no=3031">베스트
+                                                </a>
+                                                </li>
+                                                <li class=" xans-record-"><a href="/product/list.html?cate_no=3032">드레스
+                                                </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" xans-record-">
+                                            <a href="" class="link-none">하의</a>
+                                            <ul class="product-children depth3">
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=2940">전체</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3033">롱팬츠
+                                                    </a></li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3034">쇼츠</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3035">데님</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3036">스커트</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" xans-record-">
+                                            <a href="#" class="link-none">신발</a>
+                                            <ul class="product-children depth3">
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=2941">전체</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3037">레더</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3039">스니커즈</a>
+                                                </li>
+                                                <li class=" xans-record-">
+                                                    <a href="/product/list.html?cate_no=3038">샌들</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="menuCategory">
+                                <li class="productDisplayCategory">
+                                    <a href="#">라이프스타일</a>
+                                </li>
+                            </ul>
+                            <ul class="menuCategory">
+                                <li class="productDisplayCategory">
+                                    <a href="#">남성</a>
+                                </li>
+                            </ul>
+                            <ul class="menuCategory">
+                                <li class="productDisplayCategory">
+                                    <a href="#">여성</a>
+                                </li>
+                            </ul>
+                            <ul class="menuCategory">
+                                <li class="productDisplayCategory">
+                                    <a href="#">세일</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="searchSticky">
+                        <form id="searchCondition" method="get">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="list-list">
+                <div class="product-headCategory">
+                    <h2>전체</h2>
+                </div>
+                <ul class="prdList grid3">
+                    <li id="anchorBoxId_41833" class="xans-record-">
+                        <div class="thumbnail">
+                            <a href="#" class="noborder">
+                                <!--                                첫 이미지-->
+                                <img loading="lazy" src="/assets/images/items/prdItem1.png" data-original="" class="thumb-img">
+                            </a>
+                            <span class="pro_icon">
+<!--&lt;!&ndash;                                장바구니&ndash;&gt;-->
+<!--                                <span class="mcart">-->
+<!--                                    <img src=""-->
+<!--                                         alt="장바구니 담기" class="adminIcon cart">-->
+<!--                                </span>-->
+                            </span>
+                        </div>
+                        <div class="description">
+                            <p class="brand">ROA</p>
+                            <p class="name">
+                                <a href="" class="underline">
+                                    <span style="font-size:12px;color:#191919;font-weight:bold;">JERSEY HALF ZIP (ECRU)</span>
+                                </a>
+                            </p>
+
+                            <div class="price">
+                                <div class="wrap">
+                                    <p class="prd-add-text"></p>
+                                    <div class="price2"></div>
+                                </div>
+                                <div class="price1 displaynone">₩338,000</div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

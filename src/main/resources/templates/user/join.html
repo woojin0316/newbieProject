@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+    <link rel="stylesheet"
+          type="text/css"
+          th:href="@{/assets/styles/index.css}">
+</head>
+<body>
+<th:block th:replace="~{fragments/userIndex/headerSection.html :: headerSection}"></th:block>
+<div class="warp">
+    <div class="container">
+        <div class="contents">
+            <div id="join">
+                <div class="titleArea">
+                    <h2>회원가입</h2>
+                </div>
+                <form id="join-container">
+                    <div class="member-Privacy">
+                        <div class="phone-wrap">
+                            <a class="phone-certification" href="#">휴대폰인증</a>
+                        </div>
+                        <label class="write-id">
+                            <span>아이디</span>
+                            <input name="id" type="text" maxlength="50" minlength="5">
+                        </label>
+                        <label class="write-password">
+                            <span>비밀번호</span>
+                            <input name="password" type="text" maxlength="16" minlength="8">
+                            <p class="password-tip">(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</p>
+                        </label>
+                        <label class="check-password">
+                            <span>비밀번호 확인</span>
+                            <input name="password" type="text" maxlength="100" minlength="5">
+                        </label>
+                        <div class="address-container">
+                            <p>주소</p>
+                            <label class="search-address">
+                                <input type="text" name="postal">
+                                <a class="addressButton" href="#">주소검색</a>
+                            </label>
+                            <input type="text" name="address">
+                            <input type="text" name="addressDetail">
+                        </div>
+                        <label class="write-email">
+                            <span>이메일</span>
+                            <input type="text" name="email" maxlength="100" minlength="5">
+                        </label>
+                        <div class="call-wrap">
+                            <span>일반전화</span>
+                            <label class="call-number">
+                                <select name="firstCallNumber" id="firstCallNumber">
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                    <option value="033">033</option>
+                                    <option value="041">041</option>
+                                    <option value="042">042</option>
+                                    <option value="043">043</option>
+                                    <option value="044">044</option>
+                                    <option value="051">051</option>
+                                    <option value="052">052</option>
+                                    <option value="053">053</option>
+                                    <option value="054">054</option>
+                                    <option value="055">055</option>
+                                    <option value="061">061</option>
+                                    <option value="062">062</option>
+                                    <option value="063">063</option>
+                                    <option value="064">064</option>
+                                    <option value="0501">0501</option>
+                                    <option value="0502">0502</option>
+                                    <option value="0503">0503</option>
+                                    <option value="0504">0504</option>
+                                    <option value="0505">0505</option>
+                                    <option value="0506">0506</option>
+                                    <option value="0507">0507</option>
+                                </select>
+                                <input type="text" name="secondCallNumber" maxlength="4" minlength="4">
+                                <input type="text" name="thirdCallNumber" maxlength="4" minlength="4">
+                            </label>
+                            <span>휴대전화</span>
+                            <label class="call-number">
+                                <select name="firstCallNumber" id="firstPhoneCallNumber">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    음력
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                <input type="text" name="secondPhoneCallNumber" maxlength="4" minlength="4">
+                                <input type="text" name="thirdPhoneCallNumber" maxlength="4" minlength="4">
+                            </label>
+                        </div>
+                            <label class="birth-container">
+                                <span>생년월일</span>
+                                <div class="radio-wrap">
+                                    <label class="calendar">
+                                        <input type="radio" name="calendar">
+                                        <span>양력</span>
+                                    </label>
+                                    <label class="Lunar">
+                                        <input type="radio" name="Lunar">
+                                        <span>음력</span>
+                                    </label>
+                                </div>
+                                <label class="birth-wrap">
+                                    <input type="text" name="year">
+                                    <span>년</span>
+                                    <input type="text" name="month">
+                                    <span>월</span>
+                                    <input type="text" name="day">
+                                    <span>일</span>
+                                </label>
+                            </label>
+                    </div>
+                    <div class="condition-container">
+                        <div class="condition-wrap">
+                            <label class="agree-all">
+                                <input type="checkbox">
+                                <span>약관 전체 동의</span>
+                            </label>
+                            <div class="essential">
+                                <label class="agree-essential">
+                                    <input type="checkbox">
+                                    <span>[필수]이용약관 동의</span>
+                                </label>
+                                <div class="content"></div>
+                            </div>
+                            <div class="essential">
+                                <label class="agree-essential">
+                                    <input type="checkbox">
+                                    <span>[필수]개인정보 수집 및 이용 동의</span>
+                                </label>
+                                <div class="content"></div>
+                            </div>
+                            <div class="choice">
+                                <label class="agree-choice">
+                                    <input type="checkbox">
+                                    <span>[선택]쇼핑정보 수신 동의</span>
+                                </label>
+                                <div class="content"></div>
+                            </div>
+                            <div class="PersonalValidityPrd">
+                                <p>[선택] 개인정보 유효기간</p>
+                                <p>쏼라쏼라</p>
+                                <div class="radio-wrap">
+                                    <label class="yes">
+                                        <input type="radio" name="yes">
+                                        <span>동의함</span>
+                                    </label>
+                                    <label class="no">
+                                        <input type="radio" name="no">
+                                        <span>동의안함</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="join-btn">
+                        <a href="#" class="go-join">회원가입</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
